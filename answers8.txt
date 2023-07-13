@@ -1,0 +1,76 @@
+Que1.What is ORM in Hibernate?
+
+Ans:-Object Relational Model is a programming technique. This technique is used to convert the data from an incompatible type to that of a relational database. The mapping is done by using the OOP languages. For example every table in a table is represented by an object.
+
+The purpose of ORM is an application is allowed and written OOP language that is to deal with the data that is manipulates in the forms objects. The class level attributes are ‘mapped’ to tables.
+
+Que2.What are the advantages of Hibernate over JDBC?
+
+Ans:-The advantages of Hibernate over JDBC are:
+
+1. Hibernate code will work well for all databases, for ex: Oracle,MySQL, etc. where as JDBC is database specific.
+
+2. No knowledge of SQL is needed because Hibernate is a set of objects and a table is treated as an object, where as to work with JDBC, one need to know SQL.
+
+3. Query tuning is not required in Hibernate. The query tuning is automatic in hibernate by using criteria queries, and the result of performance is at its best. Where as in JDBC the query tuning is to be done by the database authors.
+
+4. With the support of cache of hibernate, the data can be placed in the cache for better performance. Where as in JDBC the java cache is to be implemented.
+
+Que3.What are some of the important interfaces of Hibernate framework?
+
+Ans:-The core interfaces of Hibernate framework are:
+Configuration.
+SessionFactory.
+Session.
+Query.
+Criteria.
+Transaction.
+
+Que4.What is a Session in Hibernate?
+
+Ans:-A Session is used to get a physical connection with a database. The Session object is lightweight and designed to be instantiated each time an interaction is needed with the database. Persistent objects are saved and retrieved through a Session object.
+
+Que5.What is a SessionFactory?
+
+Ans:-The SessionFactory is a thread safe object and used by all the threads of an application. The SessionFactory is a heavyweight object; it is usually created during application start up and kept for later use. one SessionFactory object per database using a separate configuration file.
+
+Que6.What is HQL?
+
+Ans:-Hibernate Query Language (HQL) is an easy to learn and powerful query language designed as an object-oriented extension to SQL that bridges the gap between the object-oriented systems and relational databases. The HQL syntax is very similar to the SQL syntax. it has a rich and powerful object-oriented query language available with the Hibernate ORM, which is a technique of mapping the objects to the databases. The data from object-oriented systems are mapped to relational databases with a SQL-based schema. 
+
+HQL can also be used to retrieve objects from database through O/R mapping by performing the following tasks: 
+
+Apply restrictions to properties of objects
+Arrange the results returned by a query by using the order by clause
+Paginate the results
+Aggregate the records by using group by and having clauses
+Use Joins
+Create user-defined functions
+Execute subqueries
+
+Que7.What are Many to Many associations?
+
+Ans:-The many-to-many association implies that multiple records of one table are related to multiple records of another table. The joining table will store the primary keys of both related entities.
+
+Que8.What is hibernate caching?
+
+Ans:-Hibernate caching improves the performance of the application by pooling the object in the cache. It is useful when we have to fetch the same data multiple times. There are mainly two types of caching: 
+1.First Level Cache
+2.Second Level Cache.
+
+Que9.What is the difference between first level cache and second level cache?
+
+Ans:-
+First level cache:-	
+1.First level cache is a session level cache and it is always associated with session level object
+2.It is enabled by default.
+3.It is available for a session.
+4.No Extra configuration required.
+
+Second level cache:-
+1.Second level cache is session factory level cache and it is available across all sessions.
+2.It is not enabled by default.
+3.It is available across all session.
+4.We have to decide  which concurrency strategy to use and also need to configure cache expiration and physical cache attributes.
+
+Que10.What can you tell about Hibernate Configuration File?
